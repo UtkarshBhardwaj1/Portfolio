@@ -15,19 +15,14 @@ function smoothScrolling() {
         });
     });
 }
-// resume section 
-document.getElementById("viewResumeBtn").addEventListener("click", function() {
-    var resumeIframe = document.getElementById("resumeIframe");
-    var iframeContainer = document.querySelector(".iframe-container");
+const viewResumeBtn = document.getElementById("viewResumeBtn");
+    const resumeIframeContainer = document.getElementById("resumeIframeContainer");
 
-    if (iframeContainer.style.display === "none") {
-        iframeContainer.style.display = "block";
-        resumeIframe.src = "Utkarsh_resume.pdf"; // Set the PDF file path
-    } else {
-        iframeContainer.style.display = "none";
-    }
-});
-
+    viewResumeBtn.addEventListener("click", function() {
+        // Show the iframe container and hide the button
+        resumeIframeContainer.style.display = "block";
+        viewResumeBtn.style.display = "none";
+    });
 // Function to show/hide the navigation bar on scroll
 function toggleNavbar() {
     const navbar = document.querySelector('nav');
@@ -58,15 +53,3 @@ document.addEventListener("DOMContentLoaded", function () {
 
     animateSkills();
 });
-// add class navbarDark on navbar scroll
-const header = document.querySelector('.navbar');
-
-window.onscroll = function() {
-    var top = window.scrollY;
-    if(top >=100) {
-        header.classList.add('navbarDark');
-    }
-    else {
-        header.classList.remove('navbarDark');
-    }
-}
