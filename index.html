@@ -466,17 +466,23 @@
     </div>
 </section>
 
+<!-- HTML Resume Section -->
 <section id="resume" class="py-5">
     <div class="container">
         <h2 class="text-center">Resume</h2>
         <div class="text-center">
             <button class="btn btn-primary" id="viewResumeBtn">View Resume</button>
+            <a href="Utkarsh_Resume.pdf" download="Your-Resume.pdf">
+                <button class="btn btn-secondary">Download Resume</button>
+            </a>
         </div>
-        <div class="iframe-container">
-            <iframe id="resumeIframe" src="Utkarsh_Resume.docx" frameborder="0"></iframe>
+        <div class="iframe-container" id="resumeIframeContainer" style="display: none;">
+            <iframe id="resumeIframe" src="Utkarsh_Resume.pdf" frameborder="0"></iframe>
         </div>
     </div>
 </section>
+
+
 
 <!-- Contact Information Footer -->
 <footer id="contact"class="py-4 text-center bg-light" >
@@ -512,12 +518,6 @@
         </ul>
     </div>
 </footer>
-
-
-
-
-
-
 
     <!-- Include Bootstrap and JavaScript libraries -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
