@@ -3,19 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Utkarsh's Portfolio</title>
-    
-
+     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel=”stylesheet” href=”https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css”/>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-</body>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
-</head>
     <!-- Your custom CSS can be linked here -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id=loader>
+    
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top navbarScroll">
         <div class="container">
@@ -64,7 +61,7 @@
 
     <!-- About Me Section -->
     <section id="about" class="py-5 bg-light">
-        <div class="container">
+        <div class="container" data-aos="fade-down-right">
             <h2>About Me</h2>
             <p>Hello, I'm Utkarsh, a dedicated and innovative student with a passion for problem-solving and technology. With a strong background in Java, Web development, cybersecurity, I'm on a mission to make a positive impact through my work. Explore my portfolio to discover my journey in the world of Software engeneering and the projects that define my expertise.
                <br> "I am a passionate technophile with an unwavering commitment to leveraging the power of technology to drive innovation. With a solid foundation in software and web development, I have honed my skills in crafting digital solutions that transcend boundaries. I thrive on tackling complex challenges head-on, and my journey is marked by a relentless pursuit of pushing the limits of what's possible. Technology is not just a profession for me; it's a fervent fascination, and I'm dedicated to making a meaningful impact in this ever-evolving digital landscape."
@@ -74,7 +71,7 @@
 
     <!-- services section-->
     <section id="services">
-        <div class="container">
+        <div class="container" data-aos="fade-up-left">
             <h1 class="text-center">Services</h1>
             <div class="row">
                 <div class="col-lg-4 mt-4">
@@ -148,7 +145,7 @@
     </section>  
     <!-- Skills Section -->
 <section id="skills" class="py-5">
-    <div class="container">
+    <div class="container" data-aos="fade-right">
         <h2 class="text-center">Skills</h2>
         <div class="row fields-container text-center">
             <div class="col-md-3">
@@ -169,7 +166,7 @@
 
 <!-- My Favorite Fields Section -->
 <section id="favorite-fields" class="py-5">
-    <div class="container">
+    <div class="container" data-aos="fade-left">
         <h2 class="text-center">My Favorite Fields</h2>
         <div class="row fields-container text-center">
             <div class="col-md-3">
@@ -194,7 +191,7 @@
     
   <!-- Professional Experience Section -->
 <section id="experience" class="py-5">
-    <div class="container">
+    <div class="container" data-aos="fade-right">
         <h2 class="text-center">Professional Experience</h2>
         <!-- Experience Card: IBM SkillsBuild | AICTE Internship -->
         <div class="card-body">
@@ -227,12 +224,9 @@
     </div>
 </section>
 
-    </div>
-</section>
-
 <!-- Blog Section -->
 <section id="blog" class="py-5">
-    <div class="container">
+    <div class="container" data-aos="fade-left">
         <h2 class="text-center">Blog</h2>
         <div class="row">
 
@@ -282,7 +276,7 @@
 
    <!-- Educational Qualifications Section -->
 <section id="education" class="py-5">
-    <div class="container">
+    <div class="container" data-aos="fade">
         <h2 class="text-center">Educational Qualifications</h2>
         <!-- Education Cards -->
         <div class="row">
@@ -312,7 +306,7 @@
 
 <!-- Projects Section -->
 <section id="projects" class="py-5">
-    <div class="container">
+    <div class="container" data-aos="zoom-in-down">
         <h2 class="text-center">Projects</h2>
 
         <!-- Project Card: TheGYM Web Application -->
@@ -330,10 +324,6 @@
                 </div>
             </div>
         </div>
-        <!-- End of Project Card -->
-    </div>
-</section>
-
         <!-- End of Project Card -->
     </div>
 </section>
@@ -391,7 +381,7 @@
 
 
 
-    <div class="container">
+    <div class="container" data-aos="slide-up>
         <ul class="list-inline">
             <!-- Email -->
             <li class="list-inline-item">
@@ -433,6 +423,14 @@
 
     <!-- Your custom JavaScript can be included here -->
     <script src="script.js"></script>
-        </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init(
+        {
+            offset: 300,
+            duration: 1000,
+        }
+    );
+    </script>
 </body>
 </html>
