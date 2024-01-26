@@ -16,6 +16,10 @@ body {
     background-color: #333;
     border-color: #555;
 }
+#blog:hover {
+  transform: scale(1.05); 
+  transition: transform 0.2s ease-in-out; 
+}
 
 /* services section css */
 .servicesText.card {
