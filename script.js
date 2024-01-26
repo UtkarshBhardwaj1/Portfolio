@@ -64,18 +64,3 @@ document.addEventListener("DOMContentLoaded", function () {
     window.addEventListener("scroll", handleScroll);
 });
 
-function handleScroll() {
-    const loader = document.getElementById("loader");
-    const content = document.querySelector(".content");
-    
-    // Calculate how much the user has scrolled
-    const scrollPercentage = (window.scrollY / (content.offsetHeight - window.innerHeight)) * 100;
-
-    // Hide the loader when the user has scrolled to a certain percentage
-    if (scrollPercentage > 50) {
-        loader.classList.add("hide");
-    } else {
-        loader.classList.remove("hide");
-    }
-}
-
