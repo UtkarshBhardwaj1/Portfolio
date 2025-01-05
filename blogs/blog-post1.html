@@ -4,65 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Artificial Intelligence Blog</title>
-    <!-- Add Bootstrap CSS and your custom CSS if needed -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
+        .chip {
+            display: inline-block;
+            padding: 0.25em 0.5em;
+            margin: 0.25em;
+            font-size: 0.875rem;
+            font-weight: 500;
+            color: #fff;
+            background-color: #6366f1;
+            border-radius: 16px;
+        }
+        .badge-pill {
+            padding: 0.6em 0.9em;
+            font-size: 0.9rem;
+        }
         .card {
-            border: 1px solid #ccc;
-            border-radius: 8px;
-            padding: 20px;
-            margin: 20px;
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-            background-color: #f9f9f9;
-        }
-    
-        h2 {
-            color: #333;
-        }
-    
-        p {
-            color: #666;
-        }
-    
-        /* Apply basic styles to the entire page */
-        body {
-            font-family: Arial, sans-serif;
-    
-            padding: 20px;
-    
-        }
-    
-        /* Style the container to control the content width and center it */
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-    
-        /* Style the hero section */
-        
-    
-        /* Style heading elements */
-        h1 {
-            font-size: 36px;
             margin-bottom: 20px;
         }
-    
-        h2 {
-            font-size: 24px;
+        .expansion-panel {
             margin-bottom: 15px;
         }
-    
-        h3 {
-            font-size: 20px;
-            margin-bottom: 10px;
+        .expansion-panel-content {
+            display: none;
         }
-    
-        /* Style list items */
-        li {
-            margin-bottom: 5px;
+        .expansion-panel.active .expansion-panel-content {
+            display: block;
+        }
+        .tabs {
+            margin-top: 30px;
+        }
+        .tab-content {
+            margin-top: 20px;
         }
     </style>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
     <header>
@@ -74,15 +51,9 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#section1">What is AI?</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#section2">AI in Everyday Life</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#section3">The Future of AI</a>
-                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#section1">What is AI?</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#section2">AI in Everyday Life</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#section3">The Future of AI</a></li>
                     </ul>
                 </div>
             </div>
@@ -90,90 +61,98 @@
     </header>
 
     <section id="section1" class="container mt-5">
-        <h1>What is Artificial Intelligence?</h1>
-        <p>
-            Artificial Intelligence, often abbreviated as AI, is a broad field of computer science that aims to create machines capable of intelligent behavior. It involves the development of algorithms and systems that can perform tasks that typically require human intelligence.
-        </p>
-        <p>
-            AI encompasses a wide range of subfields, including machine learning, natural language processing, robotics, and more. It's the science of creating smart machines capable of mimicking human cognition and decision-making.
-        </p>
-        <p>
-            Machine learning, a subset of AI, plays a vital role in AI development. It enables systems to learn from data, improve over time, and make predictions or decisions without being explicitly programmed.
-        </p>
-        <h2>Featured Content: AI in Healthcare</h2>
-        <p>
-            AI in healthcare is transforming the industry. From early disease detection using AI-powered medical imaging to personalized treatment plans and predictive analytics, AI is making healthcare more efficient and accessible.
-        </p>
-        <p>
-            One notable application is the use of AI to analyze medical images, such as X-rays and MRIs, for abnormalities and early signs of diseases. This technology can assist doctors in making more accurate diagnoses.
-        </p>
-        <p>
-            Additionally, AI-driven chatbots and virtual assistants are providing patients with information and support, reducing the burden on healthcare professionals and enhancing patient experiences.
-        </p>
-        <p>
-            As AI in healthcare continues to advance, it holds the promise of improving patient outcomes, reducing costs, and increasing the overall quality of care.
-        </p>
+        <div class="card">
+            <div class="card-body">
+                <h3 class="card-title">What is Artificial Intelligence?</h3>
+                <p class="card-text">
+                    Artificial Intelligence, often abbreviated as AI, refers to the simulation of human intelligence in machines. These machines are programmed to think, reason, and learn like humans, enabling them to perform tasks such as problem-solving, decision-making, and natural language understanding. AI systems are designed to process large amounts of data, identify patterns, and make decisions with minimal human intervention.
+                </p>
+                <p class="card-text">
+                    AI encompasses various subfields, including computer vision, which enables machines to interpret and process visual data, and natural language processing (NLP), which allows machines to understand and communicate in human languages. Robotics, another branch, focuses on creating intelligent machines that can perform complex physical tasks.
+                </p>
+                <div class="chips">
+                    <span class="chip">Machine Learning</span>
+                    <span class="chip">Natural Language Processing</span>
+                    <span class="chip">Robotics</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="expansion-panel">
+            <div class="expansion-panel-header bg-light p-3" data-toggle="collapse" data-target="#expansion1">
+                <h5>Featured Content: AI in Healthcare <span class="badge badge-pill badge-primary">Trending</span></h5>
+            </div>
+            <div id="expansion1" class="collapse expansion-panel-content p-3">
+                <p>AI in healthcare is revolutionizing how medical professionals diagnose and treat diseases. AI-powered algorithms can analyze medical images, such as X-rays, MRIs, and CT scans, with incredible accuracy, often detecting conditions that might be missed by human eyes. This not only speeds up the diagnostic process but also reduces the likelihood of errors.</p>
+                <p>AI is also being used in personalized medicine, where treatments are tailored to an individual’s unique genetic makeup. Virtual health assistants are improving patient engagement, answering health-related queries, and monitoring chronic conditions in real time.</p>
+            </div>
+        </div>
     </section>
 
     <section id="section2" class="container mt-5">
-        <h1>AI in Everyday Life</h1>
-        <p>
-            Artificial Intelligence has become an integral part of our daily lives. From voice assistants like Siri and Alexa to recommendation systems on streaming platforms, AI is everywhere. Here are a few examples of how AI is impacting our lives:
-        </p>
-        <h2>Voice Assistants</h2>
-        <p>
-            Voice-activated virtual assistants like Siri, Google Assistant, and Alexa use AI to understand and respond to your voice commands. They can answer questions, set reminders, control smart devices, and even engage in natural language conversations.
-        </p>
-        <h2>Recommendation Systems</h2>
-        <p>
-            Streaming services like Netflix and Spotify use AI algorithms to analyze your viewing or listening habits and recommend content that you're likely to enjoy. This personalization enhances user experience and keeps you engaged with the platform.
-        </p>
-        <h2>Autonomous Vehicles</h2>
-        <p>
-            Self-driving cars are a prime example of AI in action. They use sensors, cameras, and machine learning to navigate and make real-time decisions on the road. AI is driving the future of transportation by increasing safety and reducing accidents.
-        </p>
-        <h2>AI in Customer Service</h2>
-        <p>
-            Many businesses are implementing AI-powered chatbots to enhance customer service. These chatbots can handle routine customer inquiries, provide information, and even process orders. They are available 24/7 and can significantly improve the efficiency of customer support.
-        </p>
-        <h2>AI in Finance</h2>
-        <p>
-            Financial institutions use AI for various purposes, including fraud detection, algorithmic trading, and risk assessment. AI can analyze vast datasets and make split-second decisions to optimize investment portfolios and minimize risks.
-        </p>
+        <div class="tabs">
+            <ul class="nav nav-tabs" id="aiTabs" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="voice-tab" data-toggle="tab" href="#voice" role="tab">Voice Assistants</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="recommendation-tab" data-toggle="tab" href="#recommendation" role="tab">Recommendation Systems</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="vehicles-tab" data-toggle="tab" href="#vehicles" role="tab">Autonomous Vehicles</a>
+                </li>
+            </ul>
+            <div class="tab-content" id="aiTabsContent">
+                <div class="tab-pane fade show active" id="voice" role="tabpanel">
+                    <p>Voice assistants, such as Siri, Alexa, and Google Assistant, leverage AI to understand and respond to user commands. These systems use speech recognition and natural language processing to perform tasks like setting reminders, sending messages, and controlling smart devices. Over time, they learn user preferences, becoming more accurate and personalized.</p>
+                </div>
+                <div class="tab-pane fade" id="recommendation" role="tabpanel">
+                    <p>Recommendation systems are the backbone of platforms like Netflix, Spotify, and Amazon. By analyzing user behavior, AI algorithms suggest content, products, or services tailored to individual tastes. This personalization not only enhances user experience but also drives business growth by keeping users engaged.</p>
+                </div>
+                <div class="tab-pane fade" id="vehicles" role="tabpanel">
+                    <p>Autonomous vehicles rely on AI to navigate roads, avoid obstacles, and make real-time decisions. Using a combination of sensors, cameras, and machine learning algorithms, self-driving cars aim to make transportation safer and more efficient. Companies like Tesla and Waymo are leading the charge in this transformative field.</p>
+                </div>
+            </div>
+        </div>
     </section>
 
     <section id="section3" class="container mt-5">
         <h1>The Future of AI</h1>
-        <p>
-            The future of AI holds tremendous promise. As technology continues to advance, AI systems will become more sophisticated and capable. Here are some areas where AI is expected to make a significant impact in the future:
-        </p>
-        <h2>Healthcare</h2>
-        <p>
-            AI is poised to revolutionize healthcare. Machine learning can analyze vast datasets, aiding in disease diagnosis, drug discovery, and personalized treatment plans. Surgical robots and AI-driven diagnostics are becoming more common.
-        </p>
-        <h2>Education</h2>
-        <p>
-            AI can personalize education by adapting content to individual learning styles. It can provide feedback, create customized lesson plans, and offer assistance to students, making learning more effective and engaging.
-        </p>
-        <h2>Business and Industry</h2>
-        <p>
-            AI-powered automation is transforming industries. It's streamlining manufacturing, improving customer service, and enhancing decision-making through data analysis. Companies are adopting AI to gain a competitive edge.
-        </p>
-        <h2>AI in Space Exploration</h2>
-        <p>
-            AI is playing a crucial role in space exploration. Autonomous rovers on Mars, powered by AI, can make decisions and navigate the Martian terrain without direct human control. AI is also used in analyzing data from telescopes to discover new celestial phenomena.
-        </p>
-        <h2>The Ethical Considerations of AI</h2>
-        <p>
-            With the increasing integration of AI into various aspects of our lives, ethical concerns have emerged. Issues such as bias in AI algorithms, data privacy, and the impact of automation on employment need careful consideration. The future of AI will require robust ethical guidelines and regulations.
-        </p>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h5 class="card-title">Healthcare</h5>
+                        <p class="card-text">AI is set to revolutionize healthcare by improving diagnostic accuracy, speeding up drug discovery, and enabling telemedicine solutions. Surgical robots powered by AI are already assisting in complex procedures.</p>
+                        <span class="badge badge-success">Innovation</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h5 class="card-title">Education</h5>
+                        <p class="card-text">AI in education can adapt to individual learning styles, making lessons more engaging and effective. AI tutors and virtual classrooms are bridging the gap for learners in remote areas.</p>
+                        <span class="badge badge-info">Impact</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h5 class="card-title">Space Exploration</h5>
+                        <p class="card-text">AI-powered rovers are exploring Mars autonomously, while AI algorithms analyze vast datasets from telescopes to uncover new planets and phenomena, expanding humanity's understanding of the universe.</p>
+                        <span class="badge badge-warning">Frontier</span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <footer class="bg-dark text-light text-center py-3">
-        &copy; 2023 AI Blog. All rights reserved.
+        &copy; 2025 AI Blog. All rights reserved.
     </footer>
 
-    <!-- Add Bootstrap and jQuery scripts at the end of the body -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
