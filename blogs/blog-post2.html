@@ -5,83 +5,97 @@
     <title>Cybersecurity Blog</title>
     <!-- Add your CSS and JavaScript links here -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-</head>
-<style>
-    .card {
-        border: 1px solid #ccc;
-        border-radius: 8px;
-        padding: 20px;
-        margin: 20px;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-        background-color: #f9f9f9;
-    }
+    <style>
+        /* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+    line-height: 1.6;
+}
 
-    h2 {
-        color: #333;
-    }
+/* Header styles */
+header {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
 
-    p {
-        color: #666;
-    }
+/* Navbar styles */
+.navbar {
+    margin-bottom: 20px;
+}
 
-    /* Apply basic styles to the entire page */
-    body {
-        font-family: Arial, sans-serif;
+.navbar-brand, .nav-link {
+    color: #fff !important;
+}
 
-        padding: 20px;
+.navbar-light .navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.1);
+}
 
-    }
+.navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
 
-    /* Style the container to control the content width and center it */
-    .container {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 20px;
-    }
+/* Hero section styles */
+.hero {
+    background: url('cybersecurity.jpg') no-repeat center center/cover;
+    padding: 100px 0;
+    text-align: center;
+}
 
-    /* Style the hero section */
-    .hero {
-        background-color: #333;
-        color: #ffffff;
-        padding: 20px;
-        text-align: center;
-    }
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
 
-    /* Style heading elements */
-    h1 {
-        font-size: 36px;
-        margin-bottom: 20px;
-    }
+.hero p {
+    font-size: 1.2rem;
+}
 
-    h2 {
-        font-size: 24px;
-        margin-bottom: 15px;
-    }
+/* Card styles */
+.card {
+    background: #2a2a2a;
+    color: #f0f0f0;
+    margin-bottom: 20px;
+}
 
-    h3 {
-        font-size: 20px;
-        margin-bottom: 10px;
-    }
+.card-header {
+    background: #444;
+    color: #fff;
+}
 
-    /* Style list items */
-    li {
-        margin-bottom: 5px;
-    }
-</style>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<title>Cybersecurity Blog</title>
+.card-body {
+    padding: 20px;
+}
+
+/* Graph section styles */
+.graphs .card {
+    background: #2a2a2a;
+    color: #f0f0f0;
+}
+
+.graphs .card-header {
+    background: #444;
+    color: #fff;
+}
+
+/* Footer styles */
+footer {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+    </style>
 </head>
 
 <body>
-    <header>
-        <h1>Cybersecurity: Protecting the Digital World</h1>
-    </header>
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light ">
         <a class="navbar-brand" href="#">Cybersecurity Blog</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -104,6 +118,7 @@
             </ul>
         </div>
     </nav>
+
     
     <section class="hero">
         <div class="container text-light">
@@ -112,6 +127,11 @@
             <p>In this interconnected world, our data, identities, and critical infrastructure are at constant risk from a multitude of threats. The digital domain, once hailed as a beacon of progress, has become a battleground where cybercriminals, hackers, and threat actors seek to exploit vulnerabilities, wreak havoc, and compromise the very essence of our digital existence.</p>
             <p>This is where the importance of cybersecurity shines with unparalleled significance. Cybersecurity is the shield that stands between our digital lives and the vast array of cyber threats that loom in the shadows. It encompasses a multifaceted approach to safeguarding our digital realm, encompassing not just technology but also the human elements of awareness, vigilance, and best practices.</p>
         </div>
+        <span>
+            
+                <h3>Cybersecurity: Protecting the Digital World</h3>
+            
+        </span>
     </section>
     
     <section>
@@ -216,19 +236,87 @@
     <section class="content">
         <div class="container">
             <div class="row">
+                <!-- Card 1: Phishing Attacks -->
                 <div class="col-md-4">
                     <div class="card">
-                        <img src="image1.jpg" class="card-img-top" alt="Image 1">
+                        <img src="/images/phishing.jpg" class="card-img-top" alt="Phishing Attacks">
                         <div class="card-body">
-                            <h5 class="card-title">Topic 1</h5>
-                            <p class="card-text">Description of the topic.</p>
+                            <h5 class="card-title">Phishing Attacks</h5>
+                            <p class="card-text">
+                                Phishing is a common cyber threat where attackers use deceptive emails or messages to trick individuals into sharing sensitive information, such as passwords or credit card details.
+                            </p>
                         </div>
                     </div>
                 </div>
-                <!-- Repeat for more cards -->
+    
+                <!-- Card 2: Ransomware -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="/images/ransomware.jpg" class="card-img-top" alt="Ransomware">
+                        <div class="card-body">
+                            <h5 class="card-title">Ransomware</h5>
+                            <p class="card-text">
+                                Ransomware is a type of malicious software that locks or encrypts a victim's files until a ransom is paid. It poses a significant threat to businesses and individuals alike.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Card 3: Social Engineering -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="/images/social.jpg" class="card-img-top" alt="Social Engineering">
+                        <div class="card-body">
+                            <h5 class="card-title">Social Engineering</h5>
+                            <p class="card-text">
+                                Social engineering exploits human psychology to gain unauthorized access to systems or sensitive data. Common examples include pretexting, baiting, and tailgating.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Card 4: Malware -->
+                <div class="col-md-4 mt-4">
+                    <div class="card">
+                        <img src="/images/malware.jpg" class="card-img-top" alt="Malware">
+                        <div class="card-body">
+                            <h5 class="card-title">Malware</h5>
+                            <p class="card-text">
+                                Malware, or malicious software, includes viruses, worms, and spyware. It is designed to disrupt, damage, or gain unauthorized access to computer systems.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Card 5: Zero-Day Exploits -->
+                <div class="col-md-4 mt-4">
+                    <div class="card">
+                        <img src="/images/gg.jpg" class="card-img-top" alt="Zero-Day Exploits">
+                        <div class="card-body">
+                            <h5 class="card-title">Zero-Day Exploits</h5>
+                            <p class="card-text">
+                                Zero-day exploits take advantage of security vulnerabilities before they are patched. These attacks are difficult to detect and can cause significant damage.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Card 6: Firewalls and Defense -->
+                <div class="col-md-4 mt-4">
+                    <div class="card">
+                        <img src="/images/firewall.jpg" class="card-img-top" alt="Firewalls and Defense">
+                        <div class="card-body">
+                            <h5 class="card-title">Firewalls and Defense</h5>
+                            <p class="card-text">
+                                Firewalls are essential in protecting networks from unauthorized access. They act as a barrier, monitoring incoming and outgoing traffic based on predefined security rules.
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
+    
     <section class="graphs">
         <div class="container">
             <div class="row">
@@ -236,49 +324,43 @@
                     <div class="card">
                         <h2 class="card-header">Growth of Cybersecurity</h2>
                         <canvas id="cybersecurityChart"></canvas>
-                        <!-- <div class="card-body"> -->
-                            <!-- Your content here -->
-                            <script>
-                                // Get the canvas element
-                                var ctx = document.getElementById('cybersecurityChart').getContext('2d');
-                            
-                                // Data for the chart (you can replace this with your actual data)
-                                var data = {
-                                    labels: ['2015', '2016', '2017', '2018', '2019', '2020', '2021'],
-                                    datasets: [{
-                                        label: 'Cybersecurity Growth',
-                                        data: [20, 25, 30, 35, 40, 45, 50],
-                                        borderColor: 'rgba(75, 192, 192, 1)', // Line color
-                                        borderWidth: 2, // Line width
-                                        fill: false // Do not fill the area under the line
-                                    }]
-                                };
-                            
-                                // Chart options
-                                var options = {
-                                    scales: {
-                                        y: {
-                                            beginAtZero: true
-                                        }
+                        <script>
+                            // Get the canvas element
+                            var ctx = document.getElementById('cybersecurityChart').getContext('2d');
+                        
+                            // Data for the chart (you can replace this with your actual data)
+                            var data = {
+                                labels: ['2015', '2016', '2017', '2018', '2019', '2020', '2021'],
+                                datasets: [{
+                                    label: 'Cybersecurity Growth',
+                                    data: [20, 25, 30, 35, 40, 45, 50],
+                                    borderColor: 'rgba(75, 192, 192, 1)', // Line color
+                                    borderWidth: 2, // Line width
+                                    fill: false // Do not fill the area under the line
+                                }]
+                            };
+                        
+                            // Chart options
+                            var options = {
+                                scales: {
+                                    y: {
+                                        beginAtZero: true
                                     }
-                                };
-                            
-                                // Create the chart
-                                var cybersecurityChart = new Chart(ctx, {
-                                    type: 'line', // Use a line chart
-                                    data: data,
-                                    options: options
-                                });
-                            </script>
-                            
-                        </div>
+                                }
+                            };
+                        
+                            // Create the chart
+                            var cybersecurityChart = new Chart(ctx, {
+                                type: 'line', // Use a line chart
+                                data: data,
+                                options: options
+                            });
+                        </script>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-   
-   
     
     <section class="graphs">
         <!-- Add graphs and charts using JavaScript libraries like Chart.js or D3.js -->
@@ -289,7 +371,7 @@
 
 <footer>
     <div class="container">
-        <p>&copy; 2023 cybersecurity</p>
+        <p>&copy;   2025 Cybersecurity Blog. All rights reserved.</p>
     </div>
 </footer>
 
