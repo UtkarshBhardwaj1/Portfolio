@@ -1,228 +1,315 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Utkarsh's Portfolio - Java Software Engineer, Designer, and more.">
     <title>Utkarsh's Portfolio</title>
-     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel=”stylesheet” href=”https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css”/>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
-   
+
+    <!-- Bootstrap and Font Awesome -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <!-- AOS Animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <!-- Your Custom Styles -->
     <link rel="stylesheet" href="styles.css">
+
+    <!-- Favicon (Optional) -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 </head>
+
 <body>
-    
     <!-- Navigation Bar -->
-   <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top navbarScroll">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#"><b>Utkarsh</b></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#about">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#resume">Resume</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#services">Services</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#portfolio">Portfolio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
-
-    <!-- Cover Section -->
-    
-    <section id="cover" class="bg-light">
-        <div class="container" data-aos="fade">
-            <div class="row">
-                <div class="col-md-4">
-                    
-                    <img src="images/photo1.png" alt="Utkarsh's Photo" class="img-fluid rounded-circle">
-                </div>
-                <div class="col-md-8"data-aos="fade-in" >
-                    <h1 class="mt-5 text-dark" >Utkarsh</h1>
-                    <p class="mt-5 text-dark">"I am passionate about software and web development with a solid foundation in cybersecurity. I've delved into the fascinating world of Steganography, combining my technical skills with a passion for security. I thrive on creating innovative digital solutions and exploring the hidden possibilities in technology."</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Me Section -->
-    <section id="about" class="py-5 bg-light">
-        <div class="container" >
-            <h2>About Me</h2>
-            <p>Hello, I'm Utkarsh, a dedicated and innovative student with a passion for problem-solving and technology. With a strong background in Java, Web development, cybersecurity, I'm on a mission to make a positive impact through my work. Explore my portfolio to discover my journey in the world of Software engeneering and the projects that define my expertise.
-               <br> "I am a passionate technophile with an unwavering commitment to leveraging the power of technology to drive innovation. With a solid foundation in software and web development, I have honed my skills in crafting digital solutions that transcend boundaries. I thrive on tackling complex challenges head-on, and my journey is marked by a relentless pursuit of pushing the limits of what's possible. Technology is not just a profession for me; it's a fervent fascination, and I'm dedicated to making a meaningful impact in this ever-evolving digital landscape."
-            </p>
-        </div>
-    </section>
-
-    <!-- services section-->
-    <section id="services">
-        <div class="container" data-aos="fade">
-            <h1 class="text-center">Services</h1>
-            <div class="row">
-                <div class="col-lg-4 mt-4">
-                    <div class="card servicesText">
-                        <div class="card-body">
-                            <i class="fas servicesIcon fa-clock"></i>
-                            <h4 class="card-title mt-3">Website Development</h4>
-                            <p class="card-text mt-3">Website development is the art and science of creating and maintaining websites. It encompasses a wide range of activities, from designing the visual layout of a site to writing code that powers its functionality.
-                            </p>
-                        </div>
-                    </div>  
-                </div>
-                <div class="col-lg-4 mt-4">
-                    <div class="card servicesText">
-                        <div class="card-body">
-                            <i class='fas servicesIcon fa-layer-group'></i>
-                            <h4 class="card-title mt-3">Website Design</h4>
-                            <p class="card-text mt-3">Web design is the creation of websites and pages to reflect a company's brand and information and ensure a user-friendly experience. Appearance and design are incorporated as vital elements whether you're designing a website, mobile app or maintaining content
-                            </p>
-                        </div>
-                    </div>  
-                </div>
-
-                <div class="col-lg-4 mt-4">
-                    <div class="card servicesText">
-                        <div class="card-body">
-                            <i class='far servicesIcon fa-check-circle'></i>
-                            <h4 class="card-title mt-3">Website Deployment</h4>
-                            <p class="card-text mt-3">Deployment in software and web development means pushing changes or updates from one deployment environment to another. When setting up a website you will always have your live website, which is called the live environment or production environment
-                            </p>
-                        </div>
-                    </div>  
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-4 mt-4">
-                    <div class="card servicesText">
-                        <div class="card-body">
-                            <i class='fas servicesIcon fa-search'></i>
-                            <h4 class="card-title mt-3">SEO</h4>
-                            <p class="card-text mt-3"> Search engine optimization (SEO) is the practice of orienting your website to rank higher on a search engine results page (SERP) so that you receive more traffic. The aim is typically to rank on the first page of Google results                  
-                            </p>
-                        </div>
-                    </div>  
-                </div>
-
-                <div class="col-lg-4 mt-4">
-                    <div class="card servicesText">
-                        <div class="card-body">
-                            <i class='fas servicesIcon fa-shield-alt'></i>
-                            <h4 class="card-title mt-3">DevOps</h4>
-                            <p class="card-text mt-3">DevOps is the combination of cultural philosophies, practices, and tools that increases an organization's ability to deliver applications and services at high velocity: evolving and improving products 
-                            </p>
-                        </div>
-                    </div>  
-                </div>
-
-                <div class="col-lg-4 mt-4">
-                    <div class="card servicesText">
-                        <div class="card-body">
-                            <i class='fas servicesIcon fa-wrench'></i>
-                            <h4 class="card-title mt-3">QA</h4>
-                            <p class="card-text mt-3">Quality assurance is the overall process. There are documented steps and procedures to define what quality is, how to determine the product meets that definition & what happens if the product doesn't meet those standards.Quality control is part of the QA process.
-                            </p>
-                        </div>
-                    </div>  
-                </div>
-            </div>
-        </div>
-    </section>  
-    <!-- Skills Section -->
-<section id="skills" class="py-5">
-    <div class="container" data-aos="fade">
-        <h2 class="text-center">Skills</h2>
-        <div class="row fields-container text-center">
-            <div class="col-md-3">
-                <p class="animate__animated animate__fadeIn">Core Java, J2EE</p>
-            </div>
-            <div class="col-md-3">
-                <p class="animate__animated animate__fadeIn">Spring Boot</p>
-            </div>
-            <div class="col-md-3">
-                <p class="animate__animated animate__fadeIn">DSA</p>
-            </div>
-            <div class="col-md-3">
-                <p class="animate__animated animate__fadeIn">HTML, CSS, JavaScript</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- My Favorite Fields Section -->
-<section id="favorite-fields" class="py-5">
-    <div class="container" data-aos="fade">
-        <h2 class="text-center">My Favorite Fields</h2>
-        <div class="row fields-container text-center">
-            <div class="col-md-3">
-                <p class="animate__animated animate__fadeIn">Software Development</p>
-            </div>
-            <div class="col-md-3">
-                <p class="animate__animated animate__fadeIn">Web Development</p>
-            </div>
-            <div class="col-md-3">
-                <p class="animate__animated animate__fadeIn">Artificial Intelligence</p>
-            </div>
-            <div class="col-md-3">
-                <p class="animate__animated animate__fadeIn">Android Development</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-  <!-- Professional Experience Section -->
-<section id="experience" class="py-5">
-    <div class="container" data-aos="fade" >
-        <h2 class="text-center">Professional Experience</h2>
-        <!-- Experience Card: IBM SkillsBuild | AICTE Internship -->
-        <div class="card-body">
-            <h5 class="card-title">IBM SkillsBuild | AICTE Internship </h5>
-            <p class="card-subtitle mb-2 text-muted">Intern</p>
-            <p class="card-subtitle">Technology domain: CS (Cyber Security)</p>
-            <p class="card-subtitle text-muted">October 2023 – Novmember 2023</p>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">Learned about fundamentals of Cyber Security.</li>
-                <li class="list-group-item">Gained Information about Job Readiness Skills.</li>
-                <li class="list-group-item">Learned about Online data security(PII- Personal Identifiable
-                    Information).</li>
-            </ul>
-        </div>
-   
-        <!-- Add more experience cards as needed -->
-        
-            <div class="card-body">
-                <h5 class="card-title">Boot It Technology Pvt. Ltd., Una, Himachal Pradesh</h5>
-                <p class="card-subtitle mb-2 text-muted">Developer Intern</p>
-                <p class="card-subtitle text-muted">May 2023 – August 2023</p>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Involved in the design and the implementation using React framework.</li>
-                    <li class="list-group-item">Worked with HTML, CSS, and JavaScript to create responsive web applications.</li>
-                    <li class="list-group-item">Developed and created SQL database queries for data management.</li>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="#" style="color:  #f0f2f5;">Utkarsh</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
             </div>
-       
-        <!-- Add more experience cards as needed -->
-    </div>
-</section>
+        </div>
+    </nav>
+    
 
-<!-- Blog Section -->
+    <!-- Hero and About Me Section Side by Side -->
+    <section id="hero-about" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <!-- Hero Section -->
+                <div class="col-md-6 text-center">
+                    <header id="cover" class="text-dark py-5">
+                        <h1 class="display-4">Hello, I'm Utkarsh</h1>
+                        <p class="lead">A passionate Java Software Engineer and technology enthusiast.</p>
+                        <img src="images/photo1.png" alt="Utkarsh's Photo" class="rounded-circle mb-3" width="300" height="325">
+                    </header>
+                </div>
+                <!-- About Me Section -->
+                <div class="col-md-6">
+                    <section id="about" class="py-5">
+                        <h2>About Me</h2>
+                        <p>Hello, I'm Utkarsh, a passionate technophile with a deep commitment to leveraging technology to drive innovation. With a solid foundation in <strong>software and web development</strong>, I've honed my skills across a wide range of technologies, including <strong>Java8</strong>, <strong>Spring Boot</strong>, <strong>Microservices</strong>, <strong>Docker</strong>, <strong>Angular</strong>, and more. My expertise spans from problem-solving in <strong>DSA</strong> and <strong>algorithms</strong> to creating robust digital solutions using frameworks like <strong>Spring MVC</strong>, <strong>JPA</strong>, and <strong>Kafka</strong>.
+<br><br>
+                            I thrive on tackling complex challenges and pushing the boundaries of what technology can achieve. From crafting efficient, scalable solutions to ensuring system security with tools like <strong>JWT</strong> and <strong>Spring Security</strong>, I am constantly evolving with the digital landscape. This journey is not just about profession—it's about a fervent fascination with technology and making a meaningful impact on the world around me.
+                            <br>
+                            Explore my portfolio to see the projects that define my journey as a software engineer.
+                        </p>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </section>
+
+      <!-- Services Section -->
+      <section id="services" class="py-5  text-light">
+        <div class="container">
+            <h2 class="text-center">Services</h2>
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <i class="fas fa-laptop-code fa-4x mb-3"></i>
+                    <h4>Full Stack Development</h4>
+                    <p>Building powerful web applications using modern frameworks and tools.</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <i class="fas fa-cogs fa-4x mb-3"></i>
+                    <h4>Microservices Architecture</h4>
+                    <p>Developing scalable and efficient microservices with Spring Boot, Docker, and Kafka.</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <i class="fas fa-cloud fa-4x mb-3"></i>
+                    <h4>Cloud Solutions</h4>
+                    <p>Designing cloud-based solutions and deploying apps using AWS, Azure, or Google Cloud.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- <section id="working-on">
+        <div class="container">
+            <h2>Currently Working On</h2>
+            <p>As a dedicated software engineer, I'm always exploring new challenges and pushing my skills to new heights. Here's a look at some of the exciting projects I'm currently working on:</p>
+            <ul>
+                <li>
+                    <strong>Spring Boot & Microservices:</strong> Building scalable and resilient microservices architectures using Spring Boot, Docker, and Kafka to optimize system performance and ensure smooth communication between services.
+                </li>
+                <li>
+                    <strong>Cloud Technologies & Docker:</strong> Leveraging containerization to deploy applications on cloud platforms, ensuring seamless integration and scalability while simplifying deployment pipelines.
+                </li>
+                <li>
+                    <strong>Real-time Data Streaming:</strong> Designing and implementing data streaming solutions with Kafka, focusing on real-time analytics and enhancing system responsiveness.
+                </li>
+                <li>
+                    <strong>Web Development with Angular:</strong> Crafting responsive, dynamic web applications using Angular, HTML, CSS, and JavaScript, with an emphasis on clean, maintainable code and user-friendly interfaces.
+                </li>
+                <li>
+                    <strong>Spring Security & JWT:</strong> Enhancing application security with JWT-based authentication and implementing robust security mechanisms using Spring Security for safe, scalable systems.
+                </li>
+                <li>
+                    <strong>Redis & Caching:</strong> Improving application performance by integrating Redis for caching and data persistence, optimizing response times and reducing server load.
+                </li>
+                <li>
+                    <strong>Data Structures & Algorithms:</strong> Continuously strengthening my problem-solving skills in DSA to ensure efficiency and performance in software development.
+                </li>
+            </ul>
+            <p>I’m always looking for new opportunities to learn and grow, and my current projects reflect that drive to stay at the cutting edge of technology.</p>
+        </div>
+    </section> -->
+
+    <section id="working-on">
+        <div class="container">
+            <h2 class="section-title">Currently Working On</h2>
+            <p class="intro-text">As a dedicated software engineer, I’m constantly exploring new challenges and expanding my skill set. Here's a look at some of the exciting projects I’m currently diving into:</p>
+            <div class="project-list">
+                <div class="project-item">
+                    <h3 class="project-title">Spring Boot & Microservices</h3>
+                    <p class="project-description">Building scalable and resilient microservices architectures using Spring Boot, Docker, and Kafka to optimize system performance and ensure smooth communication between services.</p>
+                </div>
+                <div class="project-item">
+                    <h3 class="project-title">Cloud Technologies & Docker</h3>
+                    <p class="project-description">Leveraging containerization to deploy applications on cloud platforms, ensuring seamless integration and scalability while simplifying deployment pipelines.</p>
+                </div>
+                <div class="project-item">
+                    <h3 class="project-title">Real-time Data Streaming</h3>
+                    <p class="project-description">Designing and implementing data streaming solutions with Kafka, focusing on real-time analytics and enhancing system responsiveness.</p>
+                </div>
+                <div class="project-item">
+                    <h3 class="project-title">Web Development with Angular</h3>
+                    <p class="project-description">Crafting responsive, dynamic web applications using Angular, HTML, CSS, and JavaScript, with an emphasis on clean, maintainable code and user-friendly interfaces.</p>
+                </div>
+                <div class="project-item">
+                    <h3 class="project-title">Spring Security & JWT</h3>
+                    <p class="project-description">Enhancing application security with JWT-based authentication and implementing robust security mechanisms using Spring Security for safe, scalable systems.</p>
+                </div>
+                <div class="project-item">
+                    <h3 class="project-title">Redis & Caching</h3>
+                    <p class="project-description">Improving application performance by integrating Redis for caching and data persistence, optimizing response times and reducing server load.</p>
+                </div>
+                <div class="project-item">
+                    <h3 class="project-title">Data Structures & Algorithms</h3>
+                    <p class="project-description">Continuously strengthening my problem-solving skills in DSA to ensure efficiency and performance in software development.</p>
+                </div>
+            </div>
+            <p class="closing-text">I’m always looking for new opportunities to learn and grow, and my current projects reflect that drive to stay at the cutting edge of technology.</p>
+        </div>
+    </section>
+    
+    
+    <!-- Skills Section -->
+    <section id="skills" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Skills</h2>
+            <div class="row fields-container text-center">
+                <div class="col-md-3">
+                    <p class="animate__animated animate__fadeIn"><strong>Programming Languages</strong></p>
+                    <ul class="list-unstyled">
+                        <li class="skill-item"><i class="fab fa-java"></i> Java 8</li>
+                        <li class="skill-item"><i class="fas fa-layer-group"></i> J2EE</li>
+                        <li class="skill-item"><i class="fab fa-js"></i> JavaScript</li>
+                        <li class="skill-item"><i class="fas fa-database"></i> SQL</li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <p class="animate__animated animate__fadeIn"><strong>Backend Frameworks & Tools</strong></p>
+                    <ul class="list-unstyled">
+                        <li class="skill-item"><i class="fab fa-java"></i> Spring Boot</li>
+                        <li class="skill-item"><i class="fab fa-java"></i> Spring MVC</li>
+                        <li class="skill-item"><i class="fas fa-shield-alt"></i> Spring Security</li>
+                        <li class="skill-item"><i class="fas fa-database"></i> JPA</li>
+                        <li class="skill-item"><i class="fas fa-stream"></i> Kafka</li>
+                        <li class="skill-item"><i class="fas fa-network-wired"></i> REST APIs</li>
+                        <li class="skill-item"><i class="fas fa-key"></i> JWT</li>
+                        <li class="skill-item"><i class="fas fa-microchip"></i> Microservices</li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <p class="animate__animated animate__fadeIn"><strong>Data Structures & Algorithms</strong></p>
+                    <ul class="list-unstyled">
+                        <li class="skill-item"><i class="fas fa-th-large"></i> Arrays</li>
+                        <li class="skill-item"><i class="fas fa-link"></i> Linked Lists</li>
+                        <li class="skill-item"><i class="fas fa-layer-group"></i> Stacks & Queues</li>
+                        <li class="skill-item"><i class="fas fa-project-diagram"></i> Graphs</li>
+                        <li class="skill-item"><i class="fas fa-tree"></i> Trees</li>
+                        <li class="skill-item"><i class="fas fa-hashtag"></i> Hash Tables</li>
+                        <li class="skill-item"><i class="fas fa-sort-amount-down"></i> Sorting & Searching Algorithms</li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <p class="animate__animated animate__fadeIn"><strong>Frontend Technologies</strong></p>
+                    <ul class="list-unstyled">
+                        <li class="skill-item"><i class="fab fa-html5"></i> HTML</li>
+            <li class="skill-item"><i class="fab fa-css3-alt"></i> CSS</li>
+            <li class="skill-item"><i class="fab fa-js"></i> JavaScript</li>
+            <li class="skill-item"><i class="fab fa-angular"></i> Angular</li>
+            <li class="skill-item"><i class="fas fa-chart-bar"></i> D3.js</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Experience Section -->
+    <section id="experience" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Professional Experience</h2>
+            <div class="card-body">
+                <h5 class="card-title">SDE-1 | Xplorg IT & Comm Solutions</h5>
+                <p class="card-subtitle mb-2  ">Zirakpur, Punjab</p>
+                <p class="card-subtitle  ">June 2024 – Current</p>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Leading the technical developments of key features, optimizing code quality, and contributing to the overall product lifecycle.</li>
+                    <li class="list-group-item">Integrated SFTP for file management and file processing using Jsch library.</li>
+                    <li class="list-group-item">Implemented performance optimizations like lazy loading, On-Demand module loading, and dynamic component loading, reducing load time by 5-7 seconds.</li>
+                    <li class="list-group-item">Incorporated D3 library to enhance the UI, boosting tool performance.</li>
+                    <li class="list-group-item">Integrated secure APIs for faster and optimized data responses and implemented WebSocket in backend with SpringBoot.</li>
+                </ul>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">GET | Xplorg IT & Comm Solutions</h5>
+                <p class="card-subtitle mb-2  ">Zirakpur, Punjab</p>
+                <p class="card-subtitle  ">January 2024 – May 2024</p>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Developed and enhanced Telco software with a focus on Print-Fleet management tools using Angular and SpringBoot.</li>
+                    <li class="list-group-item">Integrated MongoDB for efficient data storage and management.</li>
+                    <li class="list-group-item">Optimized software performance by refactoring code and adding new features.</li>
+                    <li class="list-group-item">Collaborated with OEMs, including Nokia, Jio, and Konica, to deliver convergence solutions.</li>
+                </ul>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">IBM SkillsBuild | AICTE Internship</h5>
+                <p class="card-subtitle mb-2  ">Intern</p>
+                <p class="card-subtitle">Technology domain: CS (Cyber Security)</p>
+                <p class="card-subtitle  ">October 2023 – November 2023</p>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Learned the fundamentals of Cyber Security.</li>
+                    <li class="list-group-item">Gained insights into job readiness skills.</li>
+                    <li class="list-group-item">Studied online data security and best practices for managing Personal Identifiable Information (PII).</li>
+                </ul>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Developer Intern | Boot It Technology Pvt. Ltd.</h5>
+                <p class="card-subtitle mb-2  ">Una, Himachal Pradesh</p>
+                <p class="card-subtitle  ">May 2023 – August 2023</p>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Involved in the design and implementation of web applications using the React framework.</li>
+                    <li class="list-group-item">Worked with HTML, CSS, and JavaScript to build responsive and interactive web interfaces.</li>
+                    <li class="list-group-item">Developed and implemented SQL queries for effective database management and data handling.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+   
+
+    <!-- Projects Section -->
+    <section id="portfolio" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center">Portfolio</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="images/Screenshot (8).png" class="card-img-top" alt="TheGYM Project">
+                        <div class="card-body">
+                            <h5 class="card-title">TheGYM</h5>
+                            <p class="card-text">A full-stack web app for gym management, built with JSP, MySQL, and Bootstrap.</p>
+                            <a href="https://github.com/UtkarshBhardwaj1/TheGYM" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="images/printfleet.png" class="card-img-top" alt="PrintFleet Solutions">
+                        <div class="card-body">
+                            <h5 class="card-title">PrintFleet Solutions</h5>
+                            <p class="card-text">A web application for PrintFleet management using Angular and Angular Material.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Hiding Message in an Image</h5>
+                            <p class="card-text">A Python project for hiding and retrieving messages in images using encryption and decryption.</p>
+                            <a href="https://github.com/UtkarshBhardwaj1/HidingMessageInImage" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
 <section id="blog" class="py-5">
-    <div class="container" data-aos="fade">
+    <div class="container">
         <h2 class="text-center">Blog</h2>
         <div class="row">
 
@@ -266,155 +353,149 @@
         </div>
     </div>
 </section>
-
-   <!-- Educational Qualifications Section -->
-<section id="education" class="py-5">
-    <div class="container" data-aos="fade" >
-        <h2 class="text-center">Educational Qualifications</h2>
-        <!-- Education Cards -->
-        <div class="row">
-            <!-- Master's Qualification -->
-            <div class="col-md-6 mb-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Masters of Computer Application (MCA)</h5>
-                        <p>IET Bhaddal Technical Campus Ropar, Punjab Technical University (2022-expected 2024)</p>
-                        <p>Current CGPA: 7.63</p>
+    <!-- Educational Qualifications Section -->
+    <section id="education" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Educational Qualifications</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Masters of Computer Application (MCA)</h5>
+                            <p>IET Bhaddal Technical Campus Ropar, Punjab Technical University (2022-expected 2024)</p>
+                            <p>Current CGPA: 7.73</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!-- Bachelor's Qualification -->
-            <div class="col-md-6 mb-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Bachelor of Science (B.Sc)</h5>
-                        <p>Govt. PG College Una, Himachal Pradesh University (2019-22)</p>
-                        <p>Percentage: 64.9%</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Projects Section -->
-<section id="projects" class="py-5">
-    <div class="container" data-aos="fade">
-        <h2 class="text-center">Projects</h2>
-
-        <!-- Project Card: TheGYM Web Application -->
-        <div class="card mb-4">
-            <div class="row no-gutters">
-                <div class="col-md-4">
-                    <img src="images/Screenshot (8).png" alt="TheGYM Web Application" class="img-fluid">
-                </div>
-                <div class="col-md-8">
-                    <div class="card-body">
-                        <h5 class="card-title">TheGYM Web Application</h5>
-                        <p class="card-text">Developed and designed 'TheGYM', a web application using JSP, Servlets, MySQL, HTML, CSS, JavaScript, and Bootstrap. Features include login, logout, home, and profile pages. This web appliction is connected with MySQL.</p>
-                        <p class="card-text"><small class="text-muted">Technologies: JSP, Servlets, Apache Tomcat, MySQL, HTML, CSS, JavaScript, Bootstrap</small></p>
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Bachelor of Science (B.Sc)</h5>
+                            <p>Govt. PG College Una, Himachal Pradesh University (2019-22)</p>
+                            <p>Percentage: 64.5%</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- End of Project Card -->
-    </div>
-</section>
-
-<!-- Certifications Section -->
-<section id="certifications" class="py-5">
-    <div class="container">
-        <h2 class="text-center">Certifications</h2>
-        <!-- Certification Cards -->
-        <div class="row">
-            <!-- Certification Card 1 -->
-            <div class="col-md-6 mb-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Introduction To Data Science By Cisco</h5>
-                        <p>Issued: August 2023</p>
+    </section>
+    <!-- Favorite Fields Section -->
+    <section id="favorite-fields" class="py-5 text-white"></section>
+        <div class="container">
+            <h2 class="text-center ">MY FAVORITE FIELDS</h2>
+            <p class="lead text-center mb-5">Some of the fields I'm most passionate about include:</p>
+            <div class="row text-center">
+                <!-- Artificial Intelligence & Machine Learning -->
+                <div class="col-md-4 mb-4">
+                    <div class="card  text-light p-2 shadow">
+                        <div class="card-body">
+                            <i class="fas fa-robot fa-2x mb-2"></i>
+                            <h5 class="card-title">Artificial Intelligence & Machine Learning</h5>
+                        </div>
+                    </div>
+                </div>
+                <!-- Cyber Security -->
+                <div class="col-md-4 mb-4">
+                    <div class="card  text-light p-2 shadow">
+                        <div class="card-body">
+                            <i class="fas fa-shield-alt fa-2x mb-2"></i>
+                            <h5 class="card-title">Cyber Security</h5>
+                        </div>
+                    </div>
+                </div>
+                <!-- Blockchain Technology -->
+                <div class="col-md-4 mb-4">
+                    <div class="card  text-light p-2 shadow">
+                        <div class="card-body">
+                            <i class="fas fa-link fa-2x mb-2"></i>
+                            <h5 class="card-title">Blockchain Technology</h5>
+                        </div>
+                    </div>
+                </div>
+                <!-- Cloud Computing & DevOps -->
+                <div class="col-md-6 mb-4">
+                    <div class="card  text-light p-2 shadow">
+                        <div class="card-body">
+                            <i class="fas fa-cloud fa-2x mb-2"></i>
+                            <h5 class="card-title">Cloud Computing & DevOps</h5>
+                        </div>
+                    </div>
+                </div>
+                <!-- Big Data Analytics -->
+                <div class="col-md-6 mb-4">
+                    <div class="card  text-light p-2 shadow">
+                        <div class="card-body">
+                            <i class="fas fa-chart-bar fa-2x mb-2"></i>
+                            <h5 class="card-title">Big Data Analytics</h5>
+                        </div>
                     </div>
                 </div>
             </div>
-            <!-- Certification Card 2 -->
-            <div class="col-md-6 mb-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Java and Spring Framework with Spring Boot By Udemy</h5>
-                        <p>Issued: November 2023</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Add more certification cards as needed -->
         </div>
-    </div>
-</section>
-
-<!-- HTML Resume Section -->
-<section id="resume" class="py-5">
-    <div class="container">
-        <h2 class="text-center">Resume</h2>
-        <div class="text-center">
-            <button class="btn btn-primary" id="viewResumeBtn">View Resume</button>
-            <a href="resume/Utkarsh_Resume.pdf" download="Utkarsh_Resume.pdf">
-                <button class="btn btn-secondary">Download Resume</button>
-            </a>
-        </div>
-        <div class="iframe-container" id="resumeIframeContainer" style="display: none;">
-            <iframe id="resumeIframe" src="resume/Utkarsh_Resume.pdf" frameborder="0"></iframe>
-        </div>
-    </div>
-</section>
-
-
-
-<!-- Contact Information Footer -->
-<footer id="contact"class="py-4 text-center bg-light" >
-    <!-- Resume Section -->
-
-
-
-    <div class="container">
-        <ul class="list-inline">
-            <!-- Email -->
-            <li class="list-inline-item">
-                <a href="mailto:utkarsh7423@gmail.com">
-                    <i class="fas fa-envelope"></i> utkarsh7423@gmail.com
-                </a>
-            </li>
-            <!-- Phone -->
-            <li class="list-inline-item">
-                <a href="tel:+91-98056-11684">
-                    <i class="fas fa-phone"></i> +91-98056-11684
-                </a>
-            </li>
-            <!-- GitHub -->
-            <li class="list-inline-item">
-                <a href="https://github.com/UtkarshBhardwaj1" target="_blank">
-                    <i class="fab fa-github"></i> GitHub
-                </a>
-            </li>
-            <!-- LinkedIn -->
-            <li class="list-inline-item">
-                <a href="https://www.linkedin.com/in/utkarshbhardwaj1/">LinkedIn</a>
-            </li>
-            
-        </ul>
-    </div>
-
-</footer>
-
-
-    <!-- Include Bootstrap and JavaScript libraries -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
-
-    <!-- Your custom JavaScript can be included here -->
-    <script src="script.js"></script>
-      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
+    </section>
     
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center">Certifications</h2>
+            <ul class="list-group">
+                <li class="list-group-item">Introduction To Data Science by Cisco (August 2023)</li>
+                <li class="list-group-item">JavaScript Essentials by Cisco (January 2024)</li>
+                <li class="list-group-item">Internship in Cyber Security IBM—AICTE (November 2023)</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 text-white">
+        <div class="container text-center">
+            <h2>Contact Me</h2>
+            <p>If you'd like to collaborate or have any questions, feel free to reach out!</p>
+            <ul class="list-inline">
+                <li class="list-inline-item">
+                    <a href="mailto:utkarsh7423@gmail.com" class="text-white">
+                        <i class="fas fa-envelope"></i> Email
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="tel:+91-98056-11684" class="text-white">
+                        <i class="fas fa-phone"></i> Phone
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="https://github.com/UtkarshBhardwaj1" target="_blank" class="text-white">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="https://www.linkedin.com/in/utkarshbhardwaj1/" class="text-white">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-3 text-center bg-light">
+        <p>&copy; 2025 Utkarsh. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <!-- Initialize AOS -->
+    <script>
+        AOS.init({
+            offset: 120,
+            duration: 1000,
+            easing: 'ease-in-out',
+            once: true,
+        });
+    </script>
 </body>
+
 </html>
